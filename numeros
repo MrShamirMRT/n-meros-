@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Números aleatorios del 1 al 10</title>
+  <script>
+    function mostrarNumeroAleatorio() {
+      // Generar un número aleatorio del 1 al 10
+      var numero = Math.floor(Math.random() * 10) + 1;
+
+      // Mostrar el número en el elemento con id "numero"
+      document.getElementById("numero").textContent = numero;
+    }
+  </script>
+</head>
+<body onload="mostrarNumeroAleatorio()">
+  <h1>Número aleatorio del 1 al 10:</h1>
+  <p id="numero"></p>
+</body>
+</html>
